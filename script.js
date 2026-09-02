@@ -195,23 +195,24 @@
   <text x="360" y="228" text-anchor="middle" font-size="9" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Stage</text>
   <text x="360" y="242" text-anchor="middle" font-size="8" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">(Concourse)</text>
 
-  <!-- Annexe : directly right of Esplanade, pushed out for breathing room -->
-  <rect x="640" y="150" width="140" height="150" rx="20" fill="${c.annexe}"/>
-  <rect x="640" y="150" width="140" height="150" rx="20" fill="url(#bbHatch)"/>
-  <text x="710" y="216" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe 🔒</text>
-  <text x="710" y="232" text-anchor="middle" font-size="9.5" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe Studio</text>
+  <!-- East-side cluster, matches map: Annexe → Makansutra → Singtel Waterfront Th., left to right -->
+  <!-- Annexe -->
+  <rect x="600" y="150" width="130" height="150" rx="20" fill="${c.annexe}"/>
+  <rect x="600" y="150" width="130" height="150" rx="20" fill="url(#bbHatch)"/>
+  <text x="665" y="216" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe 🔒</text>
+  <text x="665" y="232" text-anchor="middle" font-size="9.5" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe Studio</text>
 
-  <!-- Makansutra : right of Annexe, thinned, landmark only -->
-  <rect x="808" y="160" width="92" height="125" rx="14" fill="#332a4d" stroke="#4d2c78" stroke-width="2" stroke-dasharray="5 5"/>
-  <text x="854" y="216" text-anchor="middle" font-size="9.5" font-weight="700" fill="#c9b8ea" font-family="Trebuchet MS, sans-serif">MAKAN-</text>
-  <text x="854" y="230" text-anchor="middle" font-size="9.5" font-weight="700" fill="#c9b8ea" font-family="Trebuchet MS, sans-serif">SUTRA</text>
-  <text x="854" y="246" text-anchor="middle" font-size="7.5" fill="#8a7bab" font-family="Trebuchet MS, sans-serif">(food court)</text>
+  <!-- Makansutra : food-court landmark, between Annexe and Powerhouse² -->
+  <rect x="745" y="160" width="75" height="120" rx="14" fill="#332a4d" stroke="#4d2c78" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="782" y="216" text-anchor="middle" font-size="9.5" font-weight="700" fill="#c9b8ea" font-family="Trebuchet MS, sans-serif">MAKAN-</text>
+  <text x="782" y="230" text-anchor="middle" font-size="9.5" font-weight="700" fill="#c9b8ea" font-family="Trebuchet MS, sans-serif">SUTRA</text>
+  <text x="782" y="246" text-anchor="middle" font-size="7.5" fill="#8a7bab" font-family="Trebuchet MS, sans-serif">(food court)</text>
 
-  <!-- Powerhouse2 : diagonally below-right of Makansutra -->
-  <rect x="845" y="335" width="150" height="95" rx="18" fill="${c.powerhouse}"/>
-  <rect x="845" y="335" width="150" height="95" rx="18" fill="url(#bbHatch)"/>
-  <text x="920" y="373" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Powerhouse² 🔒</text>
-  <text x="920" y="389" text-anchor="middle" font-size="9" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Singtel Waterfront Th.</text>
+  <!-- Powerhouse² / Singtel Waterfront Theatre : rightmost, along the Raffles Ave channel -->
+  <rect x="838" y="150" width="150" height="150" rx="18" fill="${c.powerhouse}"/>
+  <rect x="838" y="150" width="150" height="150" rx="18" fill="url(#bbHatch)"/>
+  <text x="913" y="216" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Powerhouse² 🔒</text>
+  <text x="913" y="232" text-anchor="middle" font-size="9" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Singtel Waterfront Th.</text>
 
   <!-- Arena / Outdoor Theatre : directly below the Esplanade building -->
   <path d="M225 445 Q360 345 495 445 Z" fill="${c.arena}"/>
