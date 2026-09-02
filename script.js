@@ -170,9 +170,11 @@
   <rect x="58" y="460" width="942" height="60" fill="#183a52"/>
   <text x="529" y="497" text-anchor="middle" font-size="13" fill="#8fb8d6" font-family="Trebuchet MS, sans-serif" letter-spacing="2">MARINA BAY</text>
 
-  <!-- Esplanade Drive : runs down the west (left) side -->
+  <!-- Esplanade Drive : L-shaped road wrapping the north (top) and west (left) sides -->
   <rect x="0" y="0" width="58" height="520" fill="#2a2440"/>
-  <text x="29" y="260" transform="rotate(-90 29 260)" text-anchor="middle" font-size="12" fill="#b9a2e0" font-family="Trebuchet MS, sans-serif" letter-spacing="2">ESPLANADE DR</text>
+  <rect x="58" y="0" width="942" height="30" fill="#2a2440"/>
+  <text x="29" y="300" transform="rotate(-90 29 300)" text-anchor="middle" font-size="11" fill="#b9a2e0" font-family="Trebuchet MS, sans-serif" letter-spacing="2">ESPLANADE DRIVE</text>
+  <text x="529" y="20" text-anchor="middle" font-size="12" fill="#b9a2e0" font-family="Trebuchet MS, sans-serif" letter-spacing="2">ESPLANADE DRIVE</text>
 
   <!-- LiveWire / Forecourt Garden : top-left, above the left dome, by the Drive -->
   <rect x="80" y="42" width="290" height="60" rx="22" fill="${c.livewire}"/>
