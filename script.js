@@ -166,18 +166,18 @@
     </pattern>
   </defs>
 
-  <!-- Marina Bay water -->
-  <rect x="0" y="460" width="1000" height="60" fill="#183a52"/>
-  <text x="500" y="497" text-anchor="middle" font-size="13" fill="#8fb8d6" font-family="Trebuchet MS, sans-serif" letter-spacing="2">MARINA BAY</text>
+  <!-- Marina Bay water : bottom, right of the road -->
+  <rect x="58" y="460" width="942" height="60" fill="#183a52"/>
+  <text x="529" y="497" text-anchor="middle" font-size="13" fill="#8fb8d6" font-family="Trebuchet MS, sans-serif" letter-spacing="2">MARINA BAY</text>
 
-  <!-- Esplanade Drive -->
-  <rect x="0" y="0" width="1000" height="34" fill="#2a2440"/>
-  <text x="500" y="22" text-anchor="middle" font-size="12" fill="#b9a2e0" font-family="Trebuchet MS, sans-serif" letter-spacing="2">ESPLANADE DRIVE</text>
+  <!-- Esplanade Drive : runs down the west (left) side -->
+  <rect x="0" y="0" width="58" height="520" fill="#2a2440"/>
+  <text x="29" y="260" transform="rotate(-90 29 260)" text-anchor="middle" font-size="12" fill="#b9a2e0" font-family="Trebuchet MS, sans-serif" letter-spacing="2">ESPLANADE DR</text>
 
-  <!-- LiveWire / Forecourt Garden : directly above the Esplanade Building -->
-  <rect x="180" y="42" width="360" height="60" rx="22" fill="${c.livewire}"/>
-  <text x="360" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">LiveWire Stage</text>
-  <text x="360" y="84" text-anchor="middle" font-size="9.5" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Forecourt Garden</text>
+  <!-- LiveWire / Forecourt Garden : top-left, above the left dome, by the Drive -->
+  <rect x="80" y="42" width="290" height="60" rx="22" fill="${c.livewire}"/>
+  <text x="225" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">LiveWire Stage</text>
+  <text x="225" y="84" text-anchor="middle" font-size="9.5" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Forecourt Garden</text>
 
   <!-- Esplanade Building envelope, wraps Theatre + Chillout + Concert Hall -->
   <ellipse cx="360" cy="222" rx="255" ry="112" fill="none" stroke="#6a3fa0" stroke-width="2.5" stroke-dasharray="8 6"/>
@@ -196,11 +196,11 @@
   <text x="360" y="242" text-anchor="middle" font-size="8" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">(Concourse)</text>
 
   <!-- East-side cluster, matches map: Annexe → Makansutra → Singtel Waterfront Th., left to right -->
-  <!-- Annexe -->
-  <rect x="600" y="150" width="130" height="150" rx="20" fill="${c.annexe}"/>
-  <rect x="600" y="150" width="130" height="150" rx="20" fill="url(#bbHatch)"/>
-  <text x="665" y="216" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe 🔒</text>
-  <text x="665" y="232" text-anchor="middle" font-size="9.5" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe Studio</text>
+  <!-- Annexe : small studio, so drawn smaller than Powerhouse² -->
+  <rect x="602" y="165" width="112" height="120" rx="18" fill="${c.annexe}"/>
+  <rect x="602" y="165" width="112" height="120" rx="18" fill="url(#bbHatch)"/>
+  <text x="658" y="219" text-anchor="middle" font-size="12" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe 🔒</text>
+  <text x="658" y="234" text-anchor="middle" font-size="9" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe Studio</text>
 
   <!-- Makansutra : food-court landmark, between Annexe and Powerhouse² -->
   <rect x="745" y="160" width="75" height="120" rx="14" fill="#332a4d" stroke="#4d2c78" stroke-width="2" stroke-dasharray="5 5"/>
