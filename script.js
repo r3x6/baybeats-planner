@@ -4,8 +4,8 @@
     {key:'livewire', label:'LiveWire Stage', sub:'Forecourt Garden', color:'var(--livewire)'},
     {key:'arena', label:'Arena', sub:'DBS Outdoor Theatre', color:'var(--arena)'},
     {key:'chillout', label:'Chillout Stage', sub:'Concourse', color:'var(--chillout)'},
-    {key:'powerhouse', label:'Powerhouse²', sub:'⟍ Reg. required', color:'var(--powerhouse)', needsReg:true},
-    {key:'annexe', label:'Annexe', sub:'⟍ Reg. required', color:'var(--annexe)', needsReg:true}
+    {key:'powerhouse', label:'Powerhouse²', sub:'🔒 Reg. required', color:'var(--powerhouse)', needsReg:true},
+    {key:'annexe', label:'Annexe', sub:'🔒 Reg. required', color:'var(--annexe)', needsReg:true}
   ];
   const DAYS = [
     {key:1, label:'Day 1', date:'3 Sep, Thu'},
@@ -141,8 +141,8 @@
   function renderLegend(){
     const wrap = document.getElementById('bbLegend');
     wrap.innerHTML = VENUES.map(v=>
-      '<span><span class="bb-swatch" style="background:'+v.color+'"></span>'+v.label+(v.needsReg?' ⟍':'')+'</span>'
-    ).join('') + '<span style="color:var(--gold)">⟍ = registration required (Powerhouse² &amp; Annexe)</span>';
+      '<span><span class="bb-swatch" style="background:'+v.color+'"></span>'+v.label+(v.needsReg?' 🔒':'')+'</span>'
+    ).join('') + '<span style="color:var(--gold)">🔒 = registration required (Powerhouse² &amp; Annexe)</span>';
     const mapLegendWrap = document.getElementById('bbMapLegend');
     if(mapLegendWrap) mapLegendWrap.innerHTML = wrap.innerHTML;
   }
@@ -198,7 +198,7 @@
   <!-- Annexe : directly right of Esplanade, pushed out for breathing room -->
   <rect x="640" y="150" width="140" height="150" rx="20" fill="${c.annexe}"/>
   <rect x="640" y="150" width="140" height="150" rx="20" fill="url(#bbHatch)"/>
-  <text x="710" y="216" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe ⟍</text>
+  <text x="710" y="216" text-anchor="middle" font-size="13" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe 🔒</text>
   <text x="710" y="232" text-anchor="middle" font-size="9.5" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Annexe Studio</text>
 
   <!-- Makansutra : right of Annexe, thinned, landmark only -->
@@ -210,7 +210,7 @@
   <!-- Powerhouse2 : diagonally below-right of Makansutra -->
   <rect x="845" y="335" width="150" height="95" rx="18" fill="${c.powerhouse}"/>
   <rect x="845" y="335" width="150" height="95" rx="18" fill="url(#bbHatch)"/>
-  <text x="920" y="373" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Powerhouse² ⟍</text>
+  <text x="920" y="373" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Powerhouse² 🔒</text>
   <text x="920" y="389" text-anchor="middle" font-size="9" fill="#0c0b12" font-family="Trebuchet MS, sans-serif">Singtel Waterfront Th.</text>
 
   <!-- Arena / Outdoor Theatre : directly below the Esplanade building -->
