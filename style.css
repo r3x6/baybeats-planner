@@ -132,6 +132,10 @@ body{background:var(--bg);min-height:100vh;padding:20px 0;}
   @media (max-width:720px){
     .bb-layout{grid-template-columns:1fr;}
   }
+  /* Grid columns must be allowed to shrink below their content width,
+     otherwise the schedule column blows out past the viewport and the
+     .bb-grid-wrap scroll region never activates (no horizontal scroll on mobile). */
+  .bb-layout > div{min-width:0;}
   .bb-legend{
     display:flex;
     flex-wrap:wrap;
@@ -147,7 +151,9 @@ body{background:var(--bg);min-height:100vh;padding:20px 0;}
     border:2px dashed var(--line);
     border-radius:20px;
     padding:12px 10px 14px;
+    min-width:0;
     overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
   }
   .bb-grid{
     display:grid;
